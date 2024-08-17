@@ -1,0 +1,10 @@
+name: Test brew
+
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: [macos-latest]
+    steps:
+      - name: Install NodeJS
+        run: brew install --cask puppetlabs/puppet/puppet-agent
